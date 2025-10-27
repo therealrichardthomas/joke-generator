@@ -1,0 +1,39 @@
+.body {
+  background: url("../../assets/a-group-of-laughing-people-BNWP62.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  padding-bottom: 10px;
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.body > * {
+  position: relative;
+  z-index: 2;
+}
+
+.jokes_container {
+  width: 90vw;
+  max-width: px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;;
+  gap: 5px;
+}
